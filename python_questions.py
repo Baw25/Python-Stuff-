@@ -61,6 +61,57 @@
 
 # Monkey patching is changing the behavior of a function or object before it is actually defined 
 # It's a pretty bad idea because you want the functions to act in a well-defined way 
+#You want to keep it simple 
+
+#The only reasons to monkey patch would be testing
+
+##############################################
+# What does this stuff mean: *args, **kwargs? And why would we use it?
+
+# *args --> allows multiple arguments as a list or tuple when we don't know how many 
+# arguments there should be 
+
+# kwargs --> we don't know how many keywords should be passed to a function 
+
+
+##############################################
+# What do these mean to you: @classmethod, @staticmethod, @property?
+
+# a decorator is a special type of function which takes a function and returns a function 
+
+# ex) 
+@some_decorator 
+def some_function(stuff): 
+  # do_some_stuff
+
+# More examples: 
+
+class MyClass(object):
+    def __init__(self):
+        self._some_property = "properties are nice"
+        self._some_other_property = "VERY nice"
+    def normal_method(*args,**kwargs):
+        print("calling normal_method({0},{1})".format(args,kwargs))
+    @classmethod
+    def class_method(*args,**kwargs):
+        print("calling class_method({0},{1})".format(args,kwargs))
+    @staticmethod
+    def static_method(*args,**kwargs):
+        print("calling static_method({0},{1})".format(args,kwargs))
+    @property
+    def some_property(self,*args,**kwargs):
+        print("calling some_property getter({0},{1},{2})".format(self,args,kwargs))
+        return self._some_property
+    @some_property.setter
+    def some_property(self,*args,**kwargs):
+        print("calling some_property setter({0},{1},{2})".format(self,args,kwargs))
+        self._some_property = args[0]
+    @property
+    def some_other_property(self,*args,**kwargs):
+        print("calling some_other_property getter({0},{1},{2})".format(self,args,kwargs))
+        return self._some_other_property
+
+
 
 
 
