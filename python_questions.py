@@ -74,7 +74,7 @@
 # kwargs --> we don't know how many keywords should be passed to a function 
 
 
-##############################################
+#############################################
 # What do these mean to you: @classmethod, @staticmethod, @property?
 
 # a decorator is a special type of function which takes a function and returns a function 
@@ -112,6 +112,47 @@ class MyClass(object):
         return self._some_other_property
 
 
+# Know the OOprogramming well and know how the super function works 
 
+
+#############################################
+# How does Python prepare garbage collection? 
+
+# This how it works in gist: 
+# 1. Maintains count of reference to objects in memory 
+
+# 2. The garbage collection looks for reference cycles and cleans them up periodically 
+ # 
+# 3. Heuristics are used to speed garbage collection. Recently created objects are more likely 
+# to be dead. Objects are created and the object collector assigns them to generations. Each object 
+# gets generations, and younger generations are dealt with first. 
+
+#############################################
+# Which is the most efficient? 
+# checks if value in array is < 0.5 and returns it's squared value
+# 
+
+def f1(lIn):
+    l1 = sorted(lIn)
+    l2 = [i for i in l1 if i<0.5]
+    return [i*i for i in l2]
+
+def f2(lIn):
+    l1 = [i for i in lIn if i<0.5] #most n length
+    l2 = sorted(l1) #most n length 
+    return [i*i for i in l2] #
+
+def f3(lIn):
+    l1 = [i*i for i in lIn]
+    l2 = sorted(l1)
+    return [i for i in l1 if i<(0.5*0.5)]
+
+# Use cProfile to evaluate efficiency 
+
+# it's obviously quicker to sort a list if it's a smaller list 
+# therefore, you shoul filter the list before it's sorted to reduce its size 
+
+# Yes I'm currently working a on data visualization projects using the D3.js library 
+# I've created a couple of projects as listed on my resume, but most of my projects lately are data graphs using D3.js 
 
 
