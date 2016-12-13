@@ -137,8 +137,14 @@ object.__xor__(self, other)
 object.__or__(self, other)
 
 
+# Coroutines:
 
+__await__() 
 
+# A coroutine’s execution can be controlled by calling __await__() 
+# and iterating over the result. When the coroutine has finished executing 
+# and returns, the iterator raises StopIteration, and the exception’s value 
+# attribute holds the return value
 
 
 

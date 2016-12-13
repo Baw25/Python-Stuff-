@@ -193,6 +193,10 @@ list1
 # Generators:
 #############################################
 
+#Generator function is a way to create an iterator. A new generator object is returned each time the generator is called.
+# allows for processing data's in batches instead of all at once for huge data sets
+
+
 # Generators in Python provide us with the advantageous concept of lazy evaluation, 
 # so when we “construct” generators, we don’t actually evaluate some value within it 
 # unless it’s absolutely needed. 
@@ -232,6 +236,11 @@ f.close()
 # You use File IO for reading and writing files 
 
 
+#############################################
+# #Lists:
+#############################################
+
+list2 = list1[start:stop:step]  
 
 
 
