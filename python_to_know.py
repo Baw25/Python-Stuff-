@@ -7,6 +7,16 @@
 # One thing you must understand is that as long as the version, 
 # supports the libraries you want to use, you can use either of them 
 
+
+#############################################
+# What can Python be used for?: 
+#############################################
+#Scripting language for large applications
+# supplies high level dynamic language types and supplies dynamic checking 
+# easily integrates with C and C++ 
+# supports automatic garbage collection
+# 
+
 #############################################
 # What are some differences between 2 and 3: 
 #############################################
@@ -187,7 +197,12 @@ list1
 # in updates to the outer dictionary too 
 # The solution to this is using a deep copy method 
 
+#############################################
+# What does the yield keyword do?:
+#############################################
 
+The yield enables a function to comeback where it left off when it is called again. 
+It allows the function to remember its state 
 
 #############################################
 # Generators:
