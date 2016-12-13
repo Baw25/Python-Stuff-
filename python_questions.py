@@ -257,6 +257,8 @@ def f3(lIn):
 # to sort keys alphabetically
 
 
+# 10. New traceback options with walk_stack() and walk_tb()
+# functions to conveniently traverse frame and traceback objects
 
 
 
@@ -265,5 +267,7 @@ def f3(lIn):
 # improvements to the modules
 
 
-
+#############################################
+# From the Python documentation: 
+#############################################
 
