@@ -157,3 +157,99 @@ def f3(lIn):
 
 
 #############################################
+# From the Python documentation: 
+#############################################
+# What are some improvements between Python 2.7 and Python 3.5: 
+
+
+# 1. PEP 492 - addition of awaitablee objects, coroutine, functions, 
+# asynchronous iteration, and asynchronous context managers
+
+# 2. async def coro(): 
+    # return 'spam'
+
+    # new await functions expressions can be used 
+    # to suspend the method until the result is available 
+    # Any object can be awaited 
+
+# 3. @ matrix operator for matrix multiplactation 
+
+
+# 4. You can use additional unpacking generalizations 
+# for lists and dictionaries 
+
+
+# 5. Adding interpolation to bytes and byte arrays 
+
+#6. OS.sancdir() - better and faster directory iterator 
+# from the OS module - which is faster than OS.walk()
+# returns an iterator and list of file names
+
+#ex) example usage: 
+
+# for entry in os.scandir(path):
+#     if not entry.name.startswith('.') and entry.is_file():
+#         print(entry.name)
+
+#7 Implementation of a retry when interrupted by signal: 
+
+# fchdir(), fchmod(), fchown(), fdatasync(), fstat(), fstatvfs(), fsync(), 
+# ftruncate(), mkfifo(), mknod(), open(), posix_fadvise(), posix_fallocate(), pread(),
+# pwrite(), read(), readv(), sendfile(), wait3(), wait4(), wait(), waitid(), 
+# waitpid(), write(), writev();
+
+# special cases: os.close() and os.dup2() now ignore EINTR errors; the syscall is not retried 
+# (see the PEP for the rationale);
+
+# select functions: devpoll.poll(), epoll.poll(), kqueue.control(), poll.poll(), select();
+# methods of the socket class: accept(), connect() (except for non-blocking sockets), recv(), 
+# recvfrom(), recvmsg(), send(), sendall(), sendmsg(), sendto();
+# signal.sigtimedwait() and signal.sigwaitinfo();
+# time.sleep().
+
+
+# 7. Ability to compare functions with isclose() call 
+# within certain level of tolerance 
+
+
+#8.  Multi-phase extension module initiation 
+
+
+# 9. What are some new modules? 
+
+# a. Typing - function type annotations 
+
+# b. zipapp - Command Line and API tools for implementing 
+# permitting executable Python ZIP applications 
+
+# 10. Improved Modules: 
+
+# argparse - now allows disabling and abreviated usage of long 
+# options 
+
+# asyncio module is provisional 
+
+# 10 What are my favorite updates: 
+
+# 1. Lock.acquire() and RLock.acquire() methods 
+# now use a monotonic timeout management and not the 
+# system clock 
+
+# 2. Memory Views support for tuple indexing 
+
+# 3. RecursionError exception is now raised when max recursion
+# or stack level too deep has been reached 
+
+
+
+
+
+
+
+
+# See the following Link for all the new 
+# improvements to the modules
+
+
+
+
