@@ -240,7 +240,21 @@ def f3(lIn):
 # 3. RecursionError exception is now raised when max recursion
 # or stack level too deep has been reached 
 
+# 4. Os.scandir() is faster than walk() method 
 
+# 5. The function testing approximate equality 
+# math.isclose()
+
+# 6. OrderDict class is now implemented in C 
+
+# 7. iglob() supports recursive search 
+#
+
+# 8. Http.client() now raises a remotedisconnected exception
+# when a remote server is not connected 
+
+# 9.json.tool command line interfaces allows the option 
+# to sort keys alphabetically
 
 
 
